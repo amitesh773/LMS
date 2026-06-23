@@ -84,16 +84,6 @@ cd LMS
 npm install
 ```
 
-### Create Environment Variables
-
-Create a `.env` file in the root directory.
-
-```env
-PORT=3000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-```
-
 ### Run Project
 
 ```bash
