@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:
+    linear-gradient(rgba(255,255,255,0.9),
+    rgba(255,255,255,0.9)),
+    url("https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200");
+
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+}
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#243b55;
+}
+
+.logo{
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.logo i{
+    margin-right:10px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#f39c12;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content h1{
+    font-size:60px;
+    color:#243b55;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.primary{
+    background:#f39c12;
+    color:white;
+}
+
+.primary:hover{
+    background:#d68910;
+}
+
+.secondary{
+    background:#243b55;
+    color:white;
+}
+
+.secondary:hover{
+    background:#1b2f44;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Features */
+
+.features{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:50px;
+}
+
+.card{
+    background:white;
+    width:300px;
+    text-align:center;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card i{
+    font-size:50px;
+    color:#f39c12;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#243b55;
+}
+
+.card p{
+    color:#666;
+}

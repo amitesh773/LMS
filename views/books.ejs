@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+
+```
+<link rel="stylesheet" href="/css/books.css">
+```
+
+</head>
+<body>
+
+```
+<div class="container">
+
+    <h1>Library Books</h1>
+
+    <form id="bookForm">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Book Title"
+            required
+        >
+
+        <input
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+        >
+
+        <input
+            type="text"
+            id="isbn"
+            placeholder="ISBN"
+            required
+        >
+
+        <input
+            type="text"
+            id="category"
+            placeholder="Category"
+            required
+        >
+
+        <input
+            type="number"
+            id="totalCopies"
+            placeholder="Total Copies"
+            required
+        >
+
+        <input
+            type="number"
+            id="availableCopies"
+            placeholder="Available Copies"
+            required
+        >
+
+        <textarea
+            id="description"
+            placeholder="Description"
+        ></textarea>
+
+        <button type="submit">
+            Add Book
+        </button>
+
+    </form>
+
+    <hr>
+
+    <div id="bookList"></div>
+
+</div>
+
+<script src="/js/books.js"></script>
+```
+
+</body>
+</html>

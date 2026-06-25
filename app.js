@@ -8,7 +8,11 @@ dotenv.config();
 //---------------------------Database connection
 const dbConnection = require("./config/dbConnection");
 dbConnection()
+//--------------------------------
+app.set("view engine","ejs");
+app.set("views",path.join(__dirname,"views"));
 
+app.use(express.static(path.join(__dirname,"public")));
 //--------------------------Data parsing--
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -32,6 +36,23 @@ app.use("/book",addBook)
 //----------------------book Record --------
 const borrowBook = require('./router/borrowBookRouter')
 app.use("/book",borrowBook )
+
+app.get("/home", (req, res) => {
+    res.render("index");
+});
+
+app.get("/login",(req,res)=>{
+    res.render("login");
+});
+
+app.get("/register",(req,res)=>{
+    res.render("register");
+});
+
+app.get("/books", (req, res) => {
+    res.render("books");
+});
+
 
 app.listen(process.env.PORT, ()=>{
     console.log(`Server is runing on port ${process.env.PORT}`)
